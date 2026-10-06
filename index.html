@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Flashcard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="cartao">
+        <h1>🌟 Você sabia?</h1>
+
+        <p id="pergunta">
+            O CSS é responsável por deixar as páginas da internet
+            mais bonitas e organizadas.
+        </p>
+
+        <div class="resposta oculta" id="resposta">
+            CSS significa <strong>Cascading Style Sheets</strong>.
+        </div>
+
+        <button class="botao" id="botaoResposta">👁 Ver resposta</button>
+
+        <div class="navegacao">
+            <button class="botao" onclick="cartaoAnterior()">◀</button>
+            <span id="contador">1 / 3</span>
+            <button class="botao" onclick="proximoCartao()">▶</button>
+        </div>
+
+        <p class="dica">💡 Espaço revela a resposta • setas ← → navegam</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
